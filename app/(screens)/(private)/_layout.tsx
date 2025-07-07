@@ -9,10 +9,9 @@ import TabIcon from "@/components/nav/TabIcon";
 // import TabBarBackground from "@/components/ui/TabBarBackground";
 import useScreenSize from "@/hooks/useScreenSize";
 import { background } from "@/utils/constants/colors";
-import { dashboard, menu, myTasks, reports } from "@/utils/constants/images";
+import { dashboard} from "@/utils/constants/images";
 
 import { studentNavItems } from "@/utils/constants/sidebarTabs";
-import { ROLES } from "@/utils/constants/types";
 import { IconSymbol } from "@/components/ui/IconSymbol";
 import BlurTabBarBackground from "@/components/ui/TabBarBackground.ios";
 
@@ -69,45 +68,15 @@ export default function TabLayout() {
                   }}
                 />
                 <Tabs.Screen
-                  name="academics"
+                  name="analytics"
                   options={{
-                    title: "Academics",
+                    title: "Analytics",
                     tabBarIcon: ({ color }) => (
                       <IconSymbol
                         size={28}
                         name="paperplane.fill"
                         color={color}
                       />
-                    ),
-                    href: null,
-                  }}
-                />
-                <Tabs.Screen
-                  name="feedback"
-                  options={{
-                    title: "Feedback",
-                    tabBarIcon: ({ color }) => (
-                      <IconSymbol size={28} name="house.fill" color={color} />
-                    ),
-                    href: null,
-                  }}
-                />
-                <Tabs.Screen
-                  name="menu"
-                  options={{
-                    title: "Menu",
-                    tabBarIcon: ({ color }) => (
-                      <IconSymbol size={28} name="house.fill" color={color} />
-                    ),
-                    href: null,
-                  }}
-                />
-                <Tabs.Screen
-                  name="reports"
-                  options={{
-                    title: "Reports",
-                    tabBarIcon: ({ color }) => (
-                      <IconSymbol size={28} name="house.fill" color={color} />
                     ),
                     href: null,
                   }}
@@ -137,110 +106,15 @@ export default function TabLayout() {
             }}
           />
           <Tabs.Screen
-            name="academics"
+            name="analytics"
             options={{
-              href: null,
-            }}
-          />
-          <Tabs.Screen
-            name="my-tasks"
-            options={{
-              title: "My Tasks",
               tabBarIcon: ({ focused }) => (
-                <TabIcon focused={focused} name="My Tasks" icon={myTasks} />
+                <TabIcon focused={focused} name="Analytics" icon={dashboard} />
               ),
+              title: "Analytics",
             }}
           />
-          <Tabs.Screen
-            name="reports"
-            options={{
-              title: "Reports",
-              tabBarIcon: ({ focused }) => (
-                <TabIcon focused={focused} name="Academics" icon={reports} />
-              ),
-            }}
-          />
-          <Tabs.Screen
-            name="menu"
-            options={{
-              title: "Menu",
-              tabBarIcon: ({ focused }) => (
-                <TabIcon focused={focused} name="Academics" icon={menu} />
-              ),
-            }}
-          />
-          <Tabs.Screen
-            name="classinfo"
-            options={{
-              href: null,
-            }}
-          />
-          <Tabs.Screen
-            name="noticeBoard"
-            options={{
-              href: null,
-            }}
-          />
-          <Tabs.Screen
-            name="contentLibrary"
-            options={{
-              href: null,
-            }}
-          />
-          <Tabs.Screen
-            name="content-library"
-            options={{
-              href: null,
-            }}
-          />
-          <Tabs.Screen
-            name="profile"
-            options={{
-              href: null,
-            }}
-          />
-          <Tabs.Screen
-            name="myTasks"
-            options={{
-              href: null,
-            }}
-          />
-          <Tabs.Screen
-            name="settings"
-            options={{
-              href: null,
-            }}
-          />
-          <Tabs.Screen
-            name="notifications"
-            options={{
-              href: null,
-            }}
-          />
-          <Tabs.Screen
-            name="academic-journey"
-            options={{
-              href: null,
-            }}
-          />
-          <Tabs.Screen
-            name="academicCalendar"
-            options={{
-              href: null,
-            }}
-          />
-          <Tabs.Screen
-            name="Self-Test"
-            options={{
-              href: null,
-            }}
-          />
-          <Tabs.Screen
-            name="feedback"
-            options={{
-              href: null,
-            }}
-          />
+          
         </Tabs>
       )}
     </>
