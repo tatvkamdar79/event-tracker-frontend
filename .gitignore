@@ -2,7 +2,6 @@
 
 # dependencies
 node_modules/
-.env
 
 # Expo
 .expo/
@@ -36,3 +35,4 @@ yarn-error.*
 
 # typescript
 *.tsbuildinfo
+config.bat

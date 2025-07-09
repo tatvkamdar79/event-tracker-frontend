@@ -148,3 +148,6 @@ export const studentIcon = require("../../assets/images/studentIcon.png");
 export const teacherIcon = require("../../assets/images/teacherIcon.png");
 export const schoolAdminIcon = require("../../assets/images/schoolAdminIcon.png");
 export const regulatorIcon = require("../../assets/images/regulatorIcon.png");
+export const paperlessIcon = require("../../assets/images/Paperless.png");
+export const paperlessCollapsedIcon = require("../../assets/images/PaperlessCollapsed.png");
+
