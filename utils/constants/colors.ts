@@ -2,7 +2,7 @@ export const primary50 = "#F8FCFF";
 export const primary100 = "#DFF3FF";
 export const primary200 = "#69c1f7";
 export const primary300 = "#0c7ae8";
-export const primary400 = "#0447a8";
+export const primary400 = "#4a90e2";
 export const primary500 = "#16205b";
 
 export const neutral100 = "#0e0e0e";

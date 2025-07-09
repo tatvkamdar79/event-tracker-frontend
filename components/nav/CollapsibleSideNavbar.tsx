@@ -3,6 +3,8 @@ import React, { useState, useRef, useEffect } from "react";
 import {
   collapseIcon,
   logout,
+  paperlessCollapsedIcon,
+  paperlessIcon,
 } from "@/utils/constants/images";
 import AppText from "../text/appText";
 import {
@@ -102,16 +104,16 @@ const CollapsibleSideNavbar = ({
         }}
       >
         <View>
-          {/* <Image
-            source={isCollapsed ? eksaqIcon : eksaqLogo}
+          <Image
+            source={isCollapsed ? paperlessCollapsedIcon : paperlessIcon}
             style={{
               height: 50,
-              resizeMode: "contain",
+              resizeMode: isCollapsed ? "contain" : "cover",
               width: 150,
               maxHeight: isCollapsed ? 30 : 50,
               marginLeft: isCollapsed ? -60 : 0,
             }}
-          /> */}
+          />
         </View>
         <View style={{ marginLeft: isCollapsed ? 0 : 81 }}>
           <TouchableOpacity
